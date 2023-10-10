@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, lightcoral, skyblue);
+        }
+
+        .box,
+        form {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            width: 20rem;
+            padding: 1.5rem;
+        }
+
+        h2 {
+            width: 100%;
+            font-size: 22px;
+            font-family: 'AR One Sans', sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            height: 25rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 5px 10px 16px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            padding-left: 11px;
+            border-radius: 8px;
+            border: 1px solid grey;
+            outline: none;
+            font-size: 15px;
+            font-family: 'AR One Sans', sans-serif;
+        }
+
+        input[type="text"]:focus {
+            border: 1px solid greenyellow;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: linear-gradient(135deg, lightcoral, skyblue);
+            font-size: 17px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'AR One Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- Add Box Start -->
+        <div class="box">
+            <h2>Add Numbers</h2>
+            <form action="http://127.0.0.1:3000/" method="get">
+                <input type="text" name="num1" placeholder="Enter Num 1">
+                <input type="text" name="num2" placeholder="Enter Num 2">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Add Box End -->
+
+        <!-- Subtract Box Start -->
+        <div class="box">
+            <h2>Subtract Numbers</h2>
+            <form action="http://127.0.0.1:3003/" method="get">
+                <input type="text" name="num1" placeholder="Enter Num 1">
+                <input type="text" name="num2" placeholder="Enter Num 2">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Subtract Box End -->
+
+        <!-- Multiply Box Start -->
+        <div class="box">
+            <h2>Multiply Numbers</h2>
+            <form action="http://127.0.0.1:3001/" method="get">
+                <input type="text" name="num1" placeholder="Enter Num 1">
+                <input type="text" name="num2" placeholder="Enter Num 2">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Multiply Box End -->
+
+        <!-- Divide Box Start -->
+        <div class="box">
+            <h2>Divide Numbers</h2>
+            <form action="http://127.0.0.1:3004/" method="get">
+                <input type="text" name="num1" placeholder="Enter Num 1">
+                <input type="text" name="num2" placeholder="Enter Num 2">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Divide Box End -->
+
+        <!-- Check Prime Box Start -->
+        <div class="box">
+            <h2>Check Prime</h2>
+            <form action="http://127.0.0.1:3005/" method="get">
+                <input type="text" name="num1" placeholder="Enter Number">
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Check Prime Box End -->
+
+        <!-- S.I Box Start -->
+        <div class="box">
+            <h2>Calculate Simple Interest</h2>
+            <form action="http://127.0.0.1:3002/" method="get">
+                <input type="text" name="p" placeholder="Enter Principal">
+                <input type="text" name="r" placeholder="Enter Rate">
+                <input type="text" name="t" placeholder="Enter Time">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- S.I Box End -->
+
+    </div>
+</body>
+
+</html>
